@@ -23,7 +23,7 @@ public class ShowDetailInfoView: UIView {
     let summaryLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: AppFonts.regular.font, size: AppFonts.Size.subHeader)
-        label.textColor = Constants.AppColors.primaryColor
+        label.textColor = AppColor.appPrimary.color
         label.textAlignment = .center
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
@@ -96,7 +96,7 @@ extension ShowDetailInfoView {
         let descriptionLabel = UILabel()
         descriptionLabel.text = description
         descriptionLabel.font = UIFont(name: AppFonts.regular.font, size: AppFonts.Size.title)
-        descriptionLabel.textColor = Constants.AppColors.primaryColor
+        descriptionLabel.textColor = AppColor.appPrimary.color
         descriptionLabel.textAlignment = .center
         descriptionLabel.accessibilityIdentifier = "descriptionLabel"
         

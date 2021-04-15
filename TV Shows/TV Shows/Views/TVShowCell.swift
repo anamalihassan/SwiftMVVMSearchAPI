@@ -33,7 +33,7 @@ class TVShowCell: UITableViewCell {
     private let titleLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont(name: AppFonts.bold.font, size: AppFonts.Size.subHeader)
-        label.textColor = Constants.AppColors.primaryColor
+        label.textColor = AppColor.appPrimary.color
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -43,7 +43,7 @@ class TVShowCell: UITableViewCell {
         label.font = UIFont(name: AppFonts.medium.font, size: AppFonts.Size.title)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 3
-        label.textColor = Constants.AppColors.primaryColor
+        label.textColor = AppColor.appPrimary.color
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -53,7 +53,7 @@ class TVShowCell: UITableViewCell {
         label.font = UIFont(name: AppFonts.regular.font, size: AppFonts.Size.body)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 3
-        label.textColor = Constants.AppColors.primaryColor
+        label.textColor = AppColor.appPrimary.color
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = Constants.AppTexts.ratingNA
         return label
@@ -64,7 +64,7 @@ class TVShowCell: UITableViewCell {
         img.image = UIImage(named: "tvShow")
         img.contentMode = .scaleAspectFill
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.tintColor = Constants.AppColors.primaryColor
+        img.tintColor = AppColor.appPrimary.color
         return img
     }()
     

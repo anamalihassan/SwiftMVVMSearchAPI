@@ -35,6 +35,8 @@
 		6F41484825D4240E006763CE /* shows.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F41484725D4240E006763CE /* shows.json */; };
 		6F43BCE02628032000226B31 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43BCDF2628032000226B31 /* RequestFactory.swift */; };
 		6F43BCE52628045100226B31 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43BCE42628045100226B31 /* AppFonts.swift */; };
+		6F43BCEA2628088A00226B31 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43BCE92628088A00226B31 /* AppColor.swift */; };
+		6F43BCF7262808BF00226B31 /* ExUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43BCF6262808BF00226B31 /* ExUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		6F41484725D4240E006763CE /* shows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shows.json; sourceTree = "<group>"; };
 		6F43BCDF2628032000226B31 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		6F43BCE42628045100226B31 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		6F43BCE92628088A00226B31 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		6F43BCF6262808BF00226B31 /* ExUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 			children = (
 				6F41483525D41C70006763CE /* Utils.swift */,
 				6F41481625D3D822006763CE /* ExStrings.swift */,
+				6F43BCF6262808BF00226B31 /* ExUIColor.swift */,
 				6F4147D925D31321006763CE /* LoadingSpinner.swift */,
 				6F4147FE25D3D158006763CE /* BGShowsTableView.swift */,
 				6F41481125D3D5C6006763CE /* CacheImageView.swift */,
@@ -216,6 +221,7 @@
 		6F4147A725D2FCBD006763CE /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				6F43BCE92628088A00226B31 /* AppColor.swift */,
 				6F4147E425D313D9006763CE /* Constants.swift */,
 				6F4147A925D2FD01006763CE /* AppURLs.swift */,
 				6F43BCE42628045100226B31 /* AppFonts.swift */,
@@ -401,6 +407,7 @@
 			files = (
 				6F41477225D2FC76006763CE /* ViewController.swift in Sources */,
 				6F43BCE02628032000226B31 /* RequestFactory.swift in Sources */,
+				6F43BCF7262808BF00226B31 /* ExUIColor.swift in Sources */,
 				6F41481725D3D822006763CE /* ExStrings.swift in Sources */,
 				6F41476E25D2FC76006763CE /* AppDelegate.swift in Sources */,
 				6F41481C25D3E3C4006763CE /* ShowDetailViewController.swift in Sources */,
@@ -416,6 +423,7 @@
 				6F4147AA25D2FD01006763CE /* AppURLs.swift in Sources */,
 				6F4147FF25D3D158006763CE /* BGShowsTableView.swift in Sources */,
 				6F43BCE52628045100226B31 /* AppFonts.swift in Sources */,
+				6F43BCEA2628088A00226B31 /* AppColor.swift in Sources */,
 				6F4147DB25D31321006763CE /* LoadingSpinner.swift in Sources */,
 				6F41481225D3D5C6006763CE /* CacheImageView.swift in Sources */,
 				6F4147E525D313D9006763CE /* Constants.swift in Sources */,

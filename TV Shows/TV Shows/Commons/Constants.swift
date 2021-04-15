@@ -21,12 +21,6 @@ enum Constants {
         static let ratingNA = "Rating: N/A"
     }
     
-    
-    enum AppColors {
-        static let primaryColor: UIColor = .white
-        static let secondaryColor: UIColor = .lightGray
-    }
-    
     enum AccessibilityIdentifiers {
         
         enum TVShowsVC {
