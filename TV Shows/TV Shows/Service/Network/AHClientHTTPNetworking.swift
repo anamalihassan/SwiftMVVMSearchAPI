@@ -40,13 +40,13 @@ enum Result<T, U: Error> {
 
 // MARK: - Networ call Protocol
 
-protocol NHDataProvider {
-    func fetchRemote<Model: Decodable>(_ val: Model.Type, url: URL, completion: @escaping (Result<Decodable, DataResponseError>) -> Void)
+protocol AHDataProvider {
+    func fetchRemote<Model: Decodable>(_ val: Model.Type, urlRequest: URLRequest, completion: @escaping (Result<Decodable, DataResponseError>) -> Void)
 }
 
 // MARK: - Network Calls
 
-final class AHClientHTTPNetworking : NHDataProvider {
+final class AHClientHTTPNetworking : AHDataProvider {
    
     let session: URLSession
     
@@ -54,9 +54,8 @@ final class AHClientHTTPNetworking : NHDataProvider {
         self.session = session
     }
     
-    func fetchRemote<Model: Decodable>(_ val: Model.Type, url: URL,
+    func fetchRemote<Model: Decodable>(_ val: Model.Type, urlRequest: URLRequest,
                          completion: @escaping (Result<Decodable, DataResponseError>) -> Void) {
-        let urlRequest = URLRequest(url: url)
         session.dataTask(with: urlRequest, completionHandler: { data, response, error in
             guard
                 let httpResponse = response as? HTTPURLResponse,

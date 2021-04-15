@@ -18,12 +18,12 @@ class APIService {
     // MARK: - Properties
     weak var delegate: APIServiceDelegate?
     
-    var client : NHDataProvider
+    var client : AHDataProvider
     var searchType : String
     
     // MARK: - Constructor
     
-    init( searchType: String, client : NHDataProvider = AHClientHTTPNetworking()) {
+    init( searchType: String, client : AHDataProvider = AHClientHTTPNetworking()) {
         self.searchType = searchType
         self.client = client
     }
@@ -38,7 +38,8 @@ class APIService {
         }
         if let url = URL(string: encodedURL) {
             Utils.printLog(url)
-            client.fetchRemote(Array<TVShowResult>.self, url: url) { result in
+            let urlRequest = RequestFactory.request(method: .GET, url: url)
+            client.fetchRemote(Array<TVShowResult>.self, urlRequest: urlRequest) { result in
                 switch result {
                 case .failure(let error):
                     self.delegate?.onFetchFailed(with: error.reason)

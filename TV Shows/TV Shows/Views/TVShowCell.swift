@@ -32,7 +32,7 @@ class TVShowCell: UITableViewCell {
     
     private let titleLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+        label.font = UIFont(name: AppFonts.bold.font, size: AppFonts.Size.subHeader)
         label.textColor = Constants.AppColors.primaryColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -40,7 +40,7 @@ class TVShowCell: UITableViewCell {
     
     private let subtitleLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue", size: 14)
+        label.font = UIFont(name: AppFonts.medium.font, size: AppFonts.Size.title)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 3
         label.textColor = Constants.AppColors.primaryColor
@@ -50,12 +50,12 @@ class TVShowCell: UITableViewCell {
     
     private let descriptionLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue", size: 12)
+        label.font = UIFont(name: AppFonts.regular.font, size: AppFonts.Size.body)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 3
         label.textColor = Constants.AppColors.primaryColor
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Rating: N/A"
+        label.text = Constants.AppTexts.ratingNA
         return label
     }()
     

@@ -22,7 +22,7 @@ public class ShowDetailInfoView: UIView {
     
     let summaryLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue", size: 17)
+        label.font = UIFont(name: AppFonts.regular.font, size: AppFonts.Size.subHeader)
         label.textColor = Constants.AppColors.primaryColor
         label.textAlignment = .center
         label.lineBreakMode = .byWordWrapping
@@ -88,14 +88,14 @@ extension ShowDetailInfoView {
     func addShowInfo(title: String, description: String){
         let titleLabel = UILabel()
         titleLabel.text = title
-        titleLabel.font = UIFont(name: "HelveticaNeue", size: 15)
+        titleLabel.font = UIFont(name: AppFonts.medium.font, size: AppFonts.Size.title)
         titleLabel.textColor = .white
         titleLabel.textAlignment = .center
         titleLabel.accessibilityIdentifier = "titleLabel"
         
         let descriptionLabel = UILabel()
         descriptionLabel.text = description
-        descriptionLabel.font = UIFont(name: "HelveticaNeue", size: 15)
+        descriptionLabel.font = UIFont(name: AppFonts.regular.font, size: AppFonts.Size.title)
         descriptionLabel.textColor = Constants.AppColors.primaryColor
         descriptionLabel.textAlignment = .center
         descriptionLabel.accessibilityIdentifier = "descriptionLabel"

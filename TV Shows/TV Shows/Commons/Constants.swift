@@ -18,6 +18,7 @@ enum Constants {
         static let NoData = "No Shows Found!"
         static let SearchShows = "Search TV Shows"
         static let InvalidURL = "Invalid URL"
+        static let ratingNA = "Rating: N/A"
     }
     
     
